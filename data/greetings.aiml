@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0">
+  <category>
+        <pattern>HI</pattern>
+        <template>
+            <random>
+                <li>Hello! Seen anything interesting today?</li>
+                <li>Hi there! What's something that made you smile recently?</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HELLO</pattern>
+        <template>
+            <random>
+                <li>Hey! What's a hobby you're passionate about?</li>
+                <li>Hello there! What's your favorite way to relax after a long day?</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HEY</pattern>
+        <template>
+            <random>
+                <li>Hey! What's your favorite thing about the city you live in?</li>
+                <li>Hey there! Have you traveled anywhere exciting recently?</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>GOOD MORNING</pattern>
+        <template>
+            <random>
+                <li>Good morning! How do you usually start your day?</li>
+                <li>Morning! What's your favorite breakfast?</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>GOOD AFTERNOON</pattern>
+        <template>
+            <random>
+                <li>Good afternoon! Do you have any afternoon rituals?</li>
+                <li>Afternoon! What's been the best part of your day so far?</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>GOOD EVENING</pattern>
+        <template>
+            <random>
+                <li>Good evening! What's your ideal way to spend an evening?</li>
+                <li>Evening! Do you have any plans for tonight?</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>GOOD NIGHT</pattern>
+        <template>
+            <random>
+                <li>Good night! What do you dream about?</li>
+                <li>Night! What's your routine before going to bed?</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOWDY</pattern>
+        <template>
+            <random>
+                <li>Howdy! Ever been to a rodeo or a country concert?</li>
+                <li>Howdy partner! What's a local tradition in your area?</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT'S UP</pattern>
+        <template>
+            <random>
+                <li>Not much, just chatting here. What are you up to?</li>
+                <li>Just hanging out. Any interesting stories to share?</li>
+            </random>
+        </template>
+    </category>
+
+    <!-- Personal Greetings -->
+   <category>
+        <pattern>*</pattern>
+        <template>
+            <random>
+                <li>Sorry, I didn't catch that. Could you please rephrase or provide more details?</li>
+                <li>I'm sorry, I didn't get that. Could you give me more information?</li>
+                <li>I didn't quite get that. But let's chat! What's on your mind?</li>
+                <li>Not sure what you mean, but I'm here to talk!</li>
+            </random>
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>MY NAME IS *</pattern>
+        <template>
+            <think><set name="username"><star/></set></think>
+            Nice to meet you, <get name="username"/>! I am chatbot
+        </template>
+    </category>
+
+
+    <category>
+        <pattern> WHAT IS MY NAME </pattern>
+        <template>
+            Your name is <get name="username"/>!
+        </template>
+    </category>
+
+    <category>
+        <pattern>* WHAT IS YOUR NAME *</pattern>
+       <template>
+           My name is ChatBot.
+        </template>
+    </category>
+
+
+
+
+
+<category>
+    <pattern>HOW ARE YOU</pattern>
+    <template>
+        <random>
+            <li>I'm doing well, thank you! How about you?</li>
+            <li>Feeling great today, thanks! How can I help you?</li>
+            <li>I'm good, thanks for asking! What can I do for you?</li>
+        </random>
+    </template>
+</category>
+
+
+
+    <!-- how are you doing ... -->
+
+
+<category>
+    <pattern>WHAT ARE YOU DOING</pattern>
+    <template>
+        <random>
+            <li>I'm here to assist you. How can I help?</li>
+            <li>Just hanging around, waiting to help you!</li>
+            <li>I'm ready to assist. What do you need?</li>
+        </random>
+    </template>
+</category>
+<category>
+    <pattern>HELLO HOW ARE YOU DOING</pattern>
+    <template>
+        <random>
+            <li>I'm doing well, thanks for asking! How about you?</li>
+            <li>Can't complain! What's new with you?</li>
+        </random>
+    </template>
+</category>
+
+<category>
+    <pattern>* HOW ARE YOU DOING</pattern>
+    <template>
+        <random>
+            <li>Doing great, thank you! What's up with you lately?</li>
+            <li>I'm good, thanks! What brings you here today?</li>
+        </random>
+    </template>
+</category>
+
+<category>
+    <pattern>HOW ARE YOU DOING *</pattern>
+    <template>
+        <random>
+            <li>Feeling good! And you?</li>
+            <li>All's well on my end. How about yourself?</li>
+        </random>
+    </template>
+</category>
+
+<category>
+    <pattern>* HOW ARE YOU DOING *</pattern>
+    <template>
+        <random>
+            <li>I'm well, thanks for asking! Anything exciting happening with you?</li>
+            <li>Good, thanks! What's new in your world?</li>
+        </random>
+    </template>
+</category>
+
+
+</aiml>
